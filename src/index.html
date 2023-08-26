@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Excuse Generator</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -14,16 +14,21 @@
   </head>
   <body>
     <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+      <div class="center-img">
+        <img id="excuseImg" src="" class="rounded mx-auto d-block mt-5" />
       </div>
+      <h1 class="mt-5">OMG! You will not believe me but...</h1>
+      <h1 id="excuse" class="mb-5"></h1>
+      <button
+        onClick="window.location.reload();"
+        class="mb-5 btn btn-outline-primary"
+      >
+        Generate a New Excuse!
+      </button>
+    </div>
+    <div class="col-12 p-4 text-center">
+      Made with ❤️ by
+      <a href="https://github.com/lvvargas-aponte">lvvargas-aponte</a>
     </div>
   </body>
 </html>
